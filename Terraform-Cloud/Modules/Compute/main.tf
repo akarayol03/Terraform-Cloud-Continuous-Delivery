@@ -83,4 +83,3 @@ resource "aws_autoscaling_attachment" "asg_attachment" {
   autoscaling_group_name = aws_autoscaling_group.tfcloud_rds.id
   lb_target_group_arn   = var.alb_tg
 }
-
