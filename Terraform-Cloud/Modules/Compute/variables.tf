@@ -1,7 +1,7 @@
 variable "public_subnet" {}
 variable "private_subnet" {}
 variable "elb" {}
-variable "key_name" {}
+variable "key_name" { default = "mykeypair"}
 variable "alb_tg" {}
 variable "private_sg" {}
 variable "public_sg" {}
