@@ -47,7 +47,7 @@ resource "aws_autoscaling_group" "tfcloud_rds" {
   desired_capacity    = 3
 
   launch_template {
-    id      = lt-06771bcc3a34a7f47
+    id      = "lt-06771bcc3a34a7f47"
     version = "$Latest"
   }
 }
