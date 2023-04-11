@@ -14,7 +14,7 @@ resource "aws_lb_target_group" "tfcloud_tg" {
   name     = "tfcloud-lb-tg-${substr(uuid(), 0, 5)}"
   protocol = var.tg_protocol
   port     = var.tg_port
-  vpc_id   = "vpc-062f84c8e78c2cb23"
+  vpc_id   = "vpc-0e503ea061a8d3a84"
 
   health_check {
     healthy_threshold   = var.lb_healthy_threshold
