@@ -2,7 +2,7 @@ variable "public_subnet" {}
 variable "private_subnet" {}
 variable "elb" {}
 variable "key_name" { default = "mykeypair"}
-variable "alb_tg" {default = "arn:aws:elasticloadbalancing:us-east-1:489673539939:targetgroup/tfcloud-lb-tg-ef110/bd6745bac05194a1"}
+variable "alb_tg" {default = "arn:aws:elasticloadbalancing:us-east-1:489673539939:targetgroup/tfcloud-lb-tg-22b4a/708e2c71c3672043"}
 variable "private_sg" {}
 variable "public_sg" {}
 
