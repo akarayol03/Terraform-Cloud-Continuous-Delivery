@@ -31,7 +31,7 @@ resource "aws_launch_template" "tfcloud_rds" {
   image_id               = data.aws_ami.linux.id
   instance_type          = var.database_instance_type
   vpc_security_group_ids = [var.private_sg]
-  key_name               = var.key_name
+  key_name               = "mykeypair"
   user_data              = filebase64("nginx.sh")
 
   tags = {
@@ -59,7 +59,7 @@ resource "aws_launch_template" "tfcloud_bastion" {
   image_id               = data.aws_ami.linux.id
   instance_type          = var.bastion_instance_type
   vpc_security_group_ids = [var.public_sg]
-  key_name               = var.key_name
+  key_name               = "mykeypair"
 
   tags = {
     Name = "tfcloud_bastion"
